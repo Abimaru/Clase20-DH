@@ -1,0 +1,388 @@
+/* Estilos generales */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Estilos del header */
+header section {
+    display: flex;
+    justify-content: space-between;
+    background: #222222;
+    padding: 20px;
+    height: 100px;
+}
+
+header section div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-grow: 0.1;
+}
+
+header section div nav{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #F3F3F3;
+}
+
+header section div nav ul{
+    width: 400px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+header section div nav ul li{
+    list-style: none;
+}
+
+header section div p {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 29px;
+    
+    color: #F3F3F3;
+}
+
+header section div p span{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 29px;
+    
+    color: #D01418;
+}
+
+/* Estilos del main */
+main{
+    background: #F3F3F3;
+}
+
+main section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+main section div.primerBloque{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: url("../img/img\ 1.png") no-repeat center fixed;     
+    background-size: cover;
+    height: 512px;
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 47px;
+    color: #FFF;
+
+}
+
+main section div.primerBloque span{    
+    color: #D01418;
+}
+
+form {
+    padding-top: 50px;
+}
+
+form button {
+    width: 220px;
+    height: 61px;
+    background: #D01418;
+    border-radius: 5px;
+    transition: background 0.5s ease-out;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 29px;
+    
+    color: #F3F3F3;
+}
+
+button:hover{
+    background: blue;
+}
+
+main section div.segundoBloque {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding-top: 20px;
+    flex-grow: 1;
+}
+
+main section div.segundoBloque h2{
+    display: flex;
+    align-self: center;
+    padding-bottom: 50px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 35px;
+
+    color: #000000;
+
+}
+
+main section div.segundoBloque div{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    flex-grow: 1;
+    padding-bottom: 30px; 
+}
+
+main section div.segundoBloque div div.juegos{
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    border-radius: 5px;   
+    flex-grow: 0.1;
+    padding-top: 20px;
+}
+
+div.juegos span{
+    display: flex;
+    align-self: flex-start;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-left: 20px;
+}
+
+div.juegos span p{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
+    color: #000000;
+}
+
+div.juegos span p:first-child{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;    
+    color: #000000;
+}
+
+div.juegos span p:last-child{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+    color: #619D00;
+}
+
+.segundoBloque img:hover{
+    animation: img 1s forwards;
+}
+
+main section div.tercerBloque {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+main section div.tercerBloque h2{
+    display: flex;
+    align-self: center;
+    padding-top: 50px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 35px;
+
+    color: #000000;
+}
+
+main section div.tercerBloque div{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    flex-grow: 1;
+    padding: 30px;
+}
+
+main section div.tercerBloque div div{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background: url('../img/banner\ 1.png') no-repeat;
+    background-size: cover;
+    width: 361px;
+    height: 135px;
+    border-radius: 5px;
+    flex-grow: 0.2;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 29px;
+    
+    color: #F3F3F3;
+}
+
+main section div.tercerBloque div div.comp{
+    
+    background: url('../img/banner\ 2.png') no-repeat;
+    background-size: cover;
+
+}
+/* Estilos del footer */
+footer section {
+    display: flex;
+    justify-content: space-between;
+    background: #222222;
+    padding: 20px;
+    height: 216px;
+}
+
+footer section div:first-child{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    flex-grow: 0.1;
+}
+
+footer section div:first-child p {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 29px;
+    
+    color: #F3F3F3;
+}
+
+footer section div:first-child p span{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 29px;
+    
+    color: #D01418;
+}
+
+footer section div:last-child{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    flex-grow: 0.1;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 29px;
+
+    color: #F3F3F3;
+}
+
+footer section div:last-child div{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    width: 200px;
+}
+
+footer div.inferior {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #C4C4C4;
+    height: 25px;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+    color: #000000;
+
+}
+
+/* Media Queries */
+
+@media (max-width: 1024px) {
+    /* Tablets */
+    
+
+}
+
+@media (max-width: 411px){
+    /* Celulares */
+
+    main section div.segundoBloque div{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        flex-grow: 1;
+        padding-bottom: 30px; 
+    }
+
+    main section div.tercerBloque div{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        flex-grow: 1;
+        padding: 30px;
+    }
+
+    main section div.tercerBloque div div{
+        padding-bottom: 50px;
+    }
+
+    footer section {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    footer section div:first-child{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: row;
+        flex-grow: 0.5;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    
+}
+
+/* Keyframes */
+@keyframes img {
+    0% {
+        transform: scale();
+    }
+
+    100% {
+        transform: scale(1.5);
+    }
+  }
